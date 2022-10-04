@@ -8,11 +8,18 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link href='bootstrap/css/bootstrap.min.css' type='text/css' rel='stylesheet'>
 <style>
+p {
+font-weight:bold;
+font-size:20pt;
+margin-left:20px;
+}
+  
 pre {
 font-weight:bold;
 font-size:20pt;
 margin-left:20px;
 }
+
 
 .qsn {
 font-size:22pt;
@@ -101,33 +108,33 @@ error=>['p' is in UpperCase]
 </div>
 <div>
 <h3 class='qsn'>1.Who is the father of python ?</h3>
-<pre><input type='radio' class='chz' name='x' > Bjarne Stroustrup</pre>
-<pre><input type='radio' class='chz' name='x'> James Gosling</pre>
-<pre><input type='radio' class='chz' name='x' id='q1'> Guido Van Rossum</pre>
-<pre><input type='radio' class='chz' name='x'> Dennis Ritchie</pre>
+<p><input type='radio' class='chz' name='x' > Bjarne Stroustrup</p>
+<p><input type='radio' class='chz' name='x'> James Gosling</p>
+<p><input type='radio' class='chz' name='x' id='q1'> Guido Van Rossum</p>
+<p><input type='radio' class='chz' name='x'> Dennis Ritchie</p>
 </div>
 <div>
 <h3 class='qsn_1'>2.Function calls stored in ?</h3>
-<pre><input type='radio' class='chz' name='z' > Heap Memory</pre>
-<pre><input type='radio' class='chz' name='z'> Static Memory</pre>
-<pre><input type='radio' class='chz' name='z' id='q2'> Stack memory</pre>
-<pre><input type='radio' class='chz' name='z'> Permenant Memory</pre>
+<p><input type='radio' class='chz' name='z' > Heap Memory</p>
+<p><input type='radio' class='chz' name='z'> Static Memory</p>
+<p><input type='radio' class='chz' name='z' id='q2'> Stack memory</p>
+<p><input type='radio' class='chz' name='z'> Permenant Memory</p>
 </div>
 
 <div>
 <h3 class='qsn_2'>3.What is Lambda in Python ?</h3>
-<pre><input type='radio' class='chz' name='y'  > Keyword to declare a variable Global</pre>
-<pre><input type='radio' class='chz' name='y' id='q3'> Anonymous Function</pre>
-<pre><input type='radio' class='chz' name='y'> To get data of its type</pre>
-<pre><input type='radio' class='chz' name='y'> None of these</pre>
+<p><input type='radio' class='chz' name='y'  > Keyword to declare a variable Global</p>
+<p><input type='radio' class='chz' name='y' id='q3'> Anonymous Function</p>
+<p><input type='radio' class='chz' name='y'> To get data of its type</p>
+<p><input type='radio' class='chz' name='y'> None of these</p>
 </div>
 
 <div>
 <h3 class='qsn_3'>4.How to declare a protected Class variable in Python?</h3>
-<pre><input type='radio' class='chz' name='w' id='q4' > __variable</pre>
-<pre><input type='radio' class='chz' name='w'> _variable</pre>
-<pre><input type='radio' class='chz' name='w'> variable</pre>
-<pre><input type='radio' class='chz' name='w'> def __init__(self)</pre>
+<p><input type='radio' class='chz' name='w' id='q4' > __variable</p>
+<p><input type='radio' class='chz' name='w'> _variable</p>
+<p><input type='radio' class='chz' name='w'> variable</p>
+<p><input type='radio' class='chz' name='w'> def __init__(self)</p>
 </div>
 
 <div>
@@ -135,7 +142,7 @@ error=>['p' is in UpperCase]
 <textarea class='txt' id='codez'>Print('hello world')</textarea>
 </div>
 <div>
-<button type="button" class="btn btn-success" onclick='confirm()'>Submit</button>
+<button id='sub' type="button" class="btn btn-success" onclick='confirm()'>Submit</button>
 </div>
 </div>
 
@@ -153,6 +160,7 @@ var qs4=document.getElementById('q4');
 var codx=document.getElementById('codez').value;
 var scr=document.getElementById('ans');
 var answ=document.getElementById('ans_box');
+var bts=document.getElementById('sub');
 if (qs1.checked == true) {
 x+=10;
 }
@@ -171,8 +179,7 @@ x+=20;
 scr.innerHTML='your score is ==' + x;
 window.scroll(0,0);
 answ.style.display='block';
-window.sleep(3000)
-alert('hai')
+bts.disabled=true;
 }
 
 </script>
